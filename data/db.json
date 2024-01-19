@@ -1,0 +1,16 @@
+{
+  "empDetails": [
+    {
+      "id": "1",
+      "name": "saranraj",
+      "mobileNo": "9789685039",
+      "emailId": "saranraj@gmail.com"
+    },
+    {
+      "id": "2",
+      "name": "mohanraj",
+      "mobileNo": "9751112548",
+      "emailId": "mohanraj@gmail.com"
+    }
+  ]
+}

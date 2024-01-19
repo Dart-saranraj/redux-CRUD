@@ -1,24 +1,27 @@
-import logo from './logo.svg';
-import './App.css';
-
+import EditForm from './features/emp/EditForm';
+import EmpForm from './features/emp/EmpForm';
+import EmpTable from './features/emp/EmpTable';
+import Header from './features/emp/Header';
+import { Routes, Route } from 'react-router-dom';
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <main>
+      <Header />
+
+      <Routes>
+        <Route
+          path='/'
+          element={
+            <>
+              <EmpForm />
+              <EmpTable />
+            </>
+          }
+        />
+
+        <Route path='/edit/:id' element={<EditForm />} />
+      </Routes>
+    </main>
   );
 }
 
